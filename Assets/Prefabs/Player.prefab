@@ -899,9 +899,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 5
-  rotationSpeed: 2
+  rotationSpeed: 90
   jumpSpeed: 8
   gravity: 20
+  playerCam: {fileID: 0}
 --- !u!114 &8173943741514457216
 MonoBehaviour:
   m_ObjectHideFlags: 0
