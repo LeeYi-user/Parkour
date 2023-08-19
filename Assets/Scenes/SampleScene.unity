@@ -1263,7 +1263,7 @@ MonoBehaviour:
   ConnectionData:
     Address: 127.0.0.1
     Port: 7777
-    ServerListenAddress: 
+    ServerListenAddress: 127.0.0.1
   DebugSimulator:
     PacketDelayMS: 0
     PacketJitterMS: 0
@@ -1281,17 +1281,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RunInBackground: 1
-  LogLevel: 0
+  LogLevel: 1
   NetworkConfig:
     ProtocolVersion: 0
     NetworkTransport: {fileID: 1780841084}
     PlayerPrefab: {fileID: 8173943741514457220, guid: 215028056b7d1874890b9aacaab84711, type: 3}
-    NetworkPrefabs:
-    - Override: 0
-      Prefab: {fileID: 8173943741514457220, guid: 215028056b7d1874890b9aacaab84711, type: 3}
-      SourcePrefabToOverride: {fileID: 0}
-      SourceHashToOverride: 0
-      OverridingTargetPrefab: {fileID: 0}
+    Prefabs:
+      NetworkPrefabsLists: []
     TickRate: 30
     ClientConnectionBufferTimeout: 10
     ConnectionApproval: 0
@@ -1307,6 +1303,12 @@ MonoBehaviour:
     LoadSceneTimeOut: 120
     SpawnTimeout: 1
     EnableNetworkLogs: 1
+    OldPrefabList:
+    - Override: 0
+      Prefab: {fileID: 8173943741514457220, guid: 215028056b7d1874890b9aacaab84711, type: 3}
+      SourcePrefabToOverride: {fileID: 0}
+      SourceHashToOverride: 0
+      OverridingTargetPrefab: {fileID: 0}
 --- !u!4 &1780841086
 Transform:
   m_ObjectHideFlags: 0
